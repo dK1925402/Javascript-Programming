@@ -1,0 +1,13 @@
+let a = prompt('Enter first no.');
+a = Number.parseInt(a);
+
+let b = prompt('Enter second no. : ');
+b= Number.parseInt(b);
+
+if(a>b){
+  console.log(a,"is greater than",b);
+ }
+
+ else{
+  console.log(b,"is greater than",a);
+ }
