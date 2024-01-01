@@ -1,0 +1,28 @@
+let a = prompt('Enter first no.');
+a = Number.parseInt(a);
+
+let b = prompt('Enter second no. : ');
+b= Number.parseInt(b);
+
+let c = prompt('Enter second no. : ');
+c= Number.parseInt(c);
+
+console.log("a = ",a);
+console.log("b = ",b);
+console.log("c = ",c);
+
+if(a>b && a>c){
+  console.log(a,"is greater than",b,"&",c);
+ }
+
+ else if(b>a && b>c){
+  console.log(b,"is greater than",a,"&",c);
+ }
+
+ else if(c>a && c>b){
+  console.log(c,"is greater than",a,"&",b);
+ }
+
+ else{
+  console.log(a,"=",b,"=",c);
+ }
