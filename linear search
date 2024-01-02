@@ -1,0 +1,29 @@
+console.log("***  linear search  ***\n\n");
+
+const x= [];// create array
+
+for(let i = 1 ; i<=50;i++){ // enter data in array in multiply of 5
+let k = 5;
+x[i]= k*i;
+}
+
+let k ;  // used for if data is found then chabge the value of k therefore not print the value of after the if condition
+let i = 1; //used in loops 
+
+let a = prompt('Enter no.'); // a store the search data by the user
+a = Number.parseInt(a);   // (typecasting) because i don't known which type of data 
+
+while ( i<=50){  //while loop
+  i++; // increament the value of i on the next time loop run
+if ( a == x[i]){    // array all data match with search data
+  console.log("Element found successfully in location x[",i,"]");
+  k=5;//if data is found then change the k value
+  break ;//exit in the loop
+}
+
+}
+//if data is not found therefore the value of k is not be 5 .
+if (k!=5){
+  console.log("Element not be found");
+}
+
