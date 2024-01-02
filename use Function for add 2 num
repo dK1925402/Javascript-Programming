@@ -1,0 +1,9 @@
+function sum(x,y){
+    
+let z = x+y ;
+console.log("Done");
+console.log("Sum is",z);
+}
+
+let a = 4 , b= 12;
+sum(a,b);
