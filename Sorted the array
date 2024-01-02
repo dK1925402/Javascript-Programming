@@ -1,0 +1,24 @@
+console.log("***  sorting  ***\n\n");
+
+const a= [12,5,29,2,35,15,9,18,7,94];// create an array
+
+let i,j; //variables used to for ( for loop)
+
+console.log("Before sorting : array",a); // print unsorted array 
+
+for (i= 0 ; i <10; i++){
+    
+    for(j=0; j<10; j++){
+        
+        if (a[i]>a[j]){
+            let temp = a[i];//{ swap the value
+            a[i]= a[j]; //of a[i] and a[j] using 
+            a[j]= temp; // temp variable store the temporary data of a[i];}
+          
+        }
+        
+    }
+}
+ 
+ console.log("After sorting : array",a);// printed the sorted array 
+
