@@ -1,0 +1,105 @@
+//  CREATE - ROCK , PAPER && SCISSOR GAME WITH THE HELP OF JAVA-SCRIPT
+
+const arr=["Rock","Paper","Scissor"]; // create array 
+
+let x = Math.random()*3; // generate random no. between 0 to 3
+x= Number.parseInt(x); // random no. generate in float therefore typecast into integer form
+
+// console.log(x); // for print the x value 
+
+
+
+// // my plan { x = 0 or 1 or 2
+
+// we use is this type : arr[x];
+
+// arr[0] = "Rock" ;    // then x = 0
+// arr[1] = "Paper" ;    // then x = 1
+// arr[2] = "Scissors" ;      // then x = 2
+// }
+
+console.log("Press : 'r' for Rock\n        'p' for Paper\n        's' for Scissors\n");
+
+let user = prompt("User : ");
+
+
+
+// ROCK CONDITIONS
+
+if (user == "r"){
+    
+    
+if (user == "r" && x == 0 ){
+
+console.log("Program :",arr[x]);
+console.log('\n***MATCH IS DRAW***');
+}
+
+else if (user == "r" && x == 1 ){
+
+console.log("Program :",arr[x]);
+console.log('\n*** LOSE! THE GAME ***');
+}
+else if (user == "r" && x == 2 ){
+
+console.log("Program :",arr[x]);
+console.log('\n*** Congratulations! You Won  ***');
+}
+
+}
+
+
+//PAPER
+else if (user == "p"){
+    
+
+if (user == "p" && x == 1 ){
+console.log("Program :",arr[x]);
+console.log('\n***MATCH IS DRAW***');}
+
+else if (user == "p" && x == 2 ){
+
+console.log("Program :",arr[x]);
+console.log('\n*** LOSE! THE GAME ***');
+}
+else if (user == "p" && x == 0 ){
+
+console.log("Program :",arr[x]);
+console.log('\n*** Congratulations! You Won  ***');
+}
+
+}
+
+
+
+
+//SCISSORS
+else if (user == "s"){
+if (user == "s" && x == 2 ){
+console.log("Program :",arr[x]);
+console.log('\n***MATCH IS DRAW***');
+
+}
+
+else if (user == "s" && x == 0 ){
+
+console.log("Program :",arr[x]);
+console.log('\n*** LOSE! THE GAME ***');
+}
+else if (user == "s" && x == 1 ){
+
+console.log("Program :",arr[x]);
+console.log('\n*** Congratulations! You Won  ***');
+}
+
+}
+
+else {
+    console.log("\nPlease enter correct input ")
+}
+
+
+
+
+
+
