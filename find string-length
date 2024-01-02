@@ -1,0 +1,4 @@
+let a = "Dhruv kumar";
+console.log(a.length);
+
+//output : 11 
